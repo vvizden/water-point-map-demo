@@ -9,7 +9,25 @@ export default new Router({
   base: process.env.BASE_URL,
   routes: [
     {
+      path: "/map",
+      redirect: "/map/" + new Date().getFullYear()
+    },
+    {
+      path: "/map/:year",
+      name: "map-year",
+      component: () => import("./views/BMap.vue"),
+      props: true
+    },
+    {
       path: "/",
+      redirect: "/map"
+    },
+    {
+      path: "*",
+      redirect: "/map"
+    },
+    {
+      path: "/home",
       name: "home",
       component: Home
     },
