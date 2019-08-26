@@ -68,9 +68,9 @@ export default {
       data1: [],
       data2: [],
       data3: [],
-      color1: "#2f54eb",
-      color2: "#fa541c",
-      color3: "#52c41a"
+      color1: "#fe1212",
+      color2: "#fead11",
+      color3: "#0670be"
     };
   },
   computed: {
